@@ -1,5 +1,5 @@
 
-# CLearCut
+# ClearCut
 
 ClearCut is a simple program built in c that replaces the background of all images to a transparent one in the directory it is run in.
 
