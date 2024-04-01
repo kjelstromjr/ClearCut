@@ -235,7 +235,13 @@ int main(int argc, const char* argv[]) {
         }
     }
 
-    int ret = readDir(".\\", system);
+    int ret;
+
+    if (system == 0) {
+        ret = readDir(".\\", system);
+    } else {
+        ret = readDir("./", system);
+    }
 
     if (ret == 0) {
         printf("Success! The new images are stored in the subdirectory 'transparent'\n");
